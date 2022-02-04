@@ -1,0 +1,28 @@
+{{ block title }}
+    Please communicate your coin flip result
+{{ endblock }}
+
+{{ block content }}
+    {{ if participant_communication_mode == 'Phone' }}
+      <p> Please call this number and announce your result: +49 123 456 789 </p>
+
+    {{ elif participant_communication_mode == 'Zoom'}}
+      <p> Please visit this Zoom link and announce your result: www.zoom.com </p>
+
+    {{ elif participant_communication_mode == 'Email'}}
+      <p> Please email your result to: email_here </p>
+
+    {{ elif participant_communication_mode == 'Mailbox'}}
+      <p> Please stick your result in the university mailbox </p>
+    {{ endif }}
+
+
+
+    <p>
+    After you announce the result, you will receive a password to proceed. Your password here:
+    {{ form.password }}
+    </p>
+
+    {{ next_button }}
+
+{{ endblock }}

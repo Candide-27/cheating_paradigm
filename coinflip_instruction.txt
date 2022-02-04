@@ -1,0 +1,41 @@
+Welcome page
+
+->
+
+Instructions for the experiment
+
+->
+
+Flip your coin
+
+-> 
+
+Display contact info based on treatment and a participant code (generate one that is human readable)
+
+Password based on whether they hit or miss for results display.
+
+        Treatments:
+
+        Assign randomly within session: i.e. treatment fixed among rounds 
+                
+                Password (two different passwords for display result/payoff) to continue:
+                        * Call phone number, or
+                        * Join zoom waiting room, or
+                        * Send an email to.
+
+                Click next:
+                        * Write it down on a piece of paper and drop off at mailbox on campus
+                
+        Backup
+                * Come to campus at a later date and tell us
+
+->
+
+Survey:
+        * Moral identity scales (both)
+        * Moral disengagement
+        * Demographics
+
+->
+
+Display results/payoff based on password given after coin flip
