@@ -1,0 +1,71 @@
+{{ block title }}
+  Moral Identity Questions
+{{ endblock }}
+
+{{ block styles }}
+
+<style>
+    .questionlabel {
+        padding-top: 40px;
+        padding-bottom: 10px;
+        font-weight: bold;
+    }
+
+    table {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    td {
+        border: none;
+    }
+
+    tr td:last-child {
+        width: 1%;
+        white-space: nowrap;
+    }
+
+</style>
+
+
+{{ endblock }}
+
+
+{{ block content }}
+
+    <p>
+        Bitte beantworten Sie folgende Fragen.
+    </p>
+
+<table style="text-align:center; width: 80%">
+
+  {{ for field in form }}
+  <tr>
+      <td colspan="7" class="questionlabel" >  {{ field.default }}
+
+      </td>
+  </tr>
+
+  <tr>
+      {{ for choice in field }}
+      <td> {{ choice.label }}</td>
+      {{ endfor }}
+  </tr>
+
+  <tr>
+      {{ for choice in field }}
+      <td width="1%"> {{ choice }}</td>
+      {{ endfor }}
+  </tr>
+  {{ endfor }}
+
+
+</table>
+
+
+
+<p style="text-align:center">
+    {{ next_button }}
+</p>
+
+{{ endblock }}

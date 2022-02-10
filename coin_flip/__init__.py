@@ -11,7 +11,7 @@ class C(BaseConstants):
     #CORE CONSTANTS
     NAME_IN_URL = 'coin_flip'
     PLAYERS_PER_GROUP = None
-    NUM_ROUNDS = 4
+    NUM_ROUNDS = 1
 
     TREATMENTS = ['Phone', 'Zoom', 'Email', 'Mailbox']
 
